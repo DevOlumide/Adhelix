@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: #FFFFFF !important;
+  font-family: NTR,sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ /* font-size: 0.911rem !important;*/
+}
+
+.text-cormorant{
+  font-family: Cormorant !important;
+}
+a{
+  text-decoration: none !important;
+}
+b{
+  font-size: 0.766rem !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1{
+  font-family: "Della Respira";
+  font-size: 1.266rem !important;
+}
+h3{
+  font-family: "Della Respira";
+  font-size: 1.133rem !important;
+}
+
+.x2{
+  font-size: 1.133rem !important;
+}
+
+.btn-tomato{
+  background-color: tomato !important;
+  color: white !important;
+  border-radius: 2rem !important;
+}
+.btn-outline-tomato{
+  border: 1px solid tomato !important;
+  color: tomato !important;
+}
+.float-right{
+  float: right !important;
+}
+.font-weight-bold{
+  font-weight: bold !important;
+}
+.img{
+  width: 100% !important;
+  height: auto !important;
+}
+.img2{
+  width: 100% !important;
+  height: 15rem !important;
+}
+.info{
+  background: rgba(27,209,255,0.1) !important;
+}
+.mt-6{
+  margin-top: 6rem !important;
+}
+.navbar-brand{
+  font-family: "Della Respira";
+}
+.navbar-toggler{
+  border: none !important;
+}
+.navbar-toggler::active{
+  border-color: tomato !important;
+}
+.navbar-toggler-icon{
+  background-image: url("svgs/mbri-menu.svg") !important;
+}
+.round-circle{
+  border-radius: 3rem !important;
+}
+.small{
+  font-size: 0.766rem !important;
+}
+.text-della{
+  font-family: "Della Respira";
+}
+.text-tomato{
+  color: tomato !important;
+}
