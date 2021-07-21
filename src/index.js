@@ -18,14 +18,16 @@ class App extends React.Component{
       loading: true
     }
   }
- componentWillMount(){
- const loading = this.state.loading;
-  
-  if(loading){
-    return(null);
-   }
- }
+ componentDidMount(){
+   asynCall().then(() => this.setState({
+    loading: false
+   }));
+  }
   render(){
+    const {loading} = this.state;
+    if(loading){
+      return null;
+    }
     return(
    <React.Fragment>
    <Navigation />
@@ -396,6 +398,9 @@ class Footer extends React.Component{
   
 }
 
+function asynCall(){
+  return new Promise ((resolve) => setTimeout(() => resolve(),2500));
+}
 ReactDOM.render(
     <App />,
   document.getElementById('root')
