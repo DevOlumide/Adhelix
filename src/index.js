@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import {BrowserRouter as Router,Route,Link, Switch} from "react-router-dom";
+import {BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Fade from "react-reveal/Fade";
@@ -29,6 +29,8 @@ class App extends React.Component{
 class Navigation extends React.Component{
   constructor(props){
     super(props);
+    this.state = {
+    }
   }
   render(){
     return(
@@ -72,7 +74,7 @@ class Home extends React.Component{
      </div>
      <div className="col-12">
      <Zoom>
-     <img src="/assets/images/product-1.jpg" className="img"/>
+     <img src="/assets/images/product-1.jpg" className="img" alt="A beautiful and modern sofa by Adhelix"/>
      </Zoom>
      </div>
      </div>
@@ -84,15 +86,15 @@ class Home extends React.Component{
      <div className="info rounded p-2">
      <div className="row">
      <div className="col-md-4">
-     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-speed.svg" className=" p-2"/> Fast and affordable</h1>
+     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-speed.svg" className=" p-2" alt=""/> Fast and affordable</h1>
      <p className="text-muted">We promise to deliver our services on time while still making it affordable. We do our best to keep up with deadlines.</p>
      </div>
      <div className="col-md-4">
-     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-briefcase.svg" className="p-2"/> Easy components design</h1>
+     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-briefcase.svg" className="p-2" alt=""/> Easy components design</h1>
      <p className="text-muted">Our products are portable and are designed on the belief that furnitures should fit your home and lifestyle.</p>
      </div>
      <div className="col-md-4">
-     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-database.svg" className="p-2"/>Durable, Quality materials</h1>
+     <h1 className="font-weight-bold"><img src="assets/fonts/svg/mbri-database.svg" className="p-2" alt=""/>Durable, Quality materials</h1>
      <p className="text-muted">All our products are made with first-class quality materials. We hate failing furnitures, it's a waste of time and money.</p>
      </div>
      </div>
@@ -164,30 +166,30 @@ class Home extends React.Component{
     <div className="row">
     <div className="col-12 col-md-6">
     <h1 className="font-weight-bold">The last time you will have a leaking roof</h1>
-    <p className="text-muted">Integrity sit atop of our core values. Our roofings both interior and exterior are made with best quality materials we find in the market.</p>
+    <p className="text-muted">Integrity sits on the top of our core values. Our roofings both interior and exterior are made with best quality materials we find in the market.</p>
     
     <p className="">
     <h1>
-    <img src="assets/fonts/svg/mbri-features.svg" />
+    <img src="assets/fonts/svg/mbri-features.svg" alt=""/>
     Best Furniture Designs
     </h1>
     <p className="text-muted">
     All our products and services are designed by probably the best wood-workers in Nigeria.
     </p>
   <h1>
-    <img src="assets/fonts/svg/mbri-credit-card.svg" />
+    <img src="assets/fonts/svg/mbri-credit-card.svg" alt=""/>
     Pocket-friendly Prices
     </h1>
     <p className="text-muted">
     We believe in making furnitures that provides optimal comfort without breaking the bank.
     </p>
   <h1>
-    <img src="assets/fonts/svg/mbri-magic-stick.svg" />
+    <img src="assets/fonts/svg/mbri-magic-stick.svg" alt=""/>
     Live your comfort zone
     </h1>
     <p className="text-muted">
     Works like magic. You simply dream it and we design it. Make sense?
-    <a href="tel:" className="text-tomato">Contact us now</a>
+    <a href="tel:08023977807" className="text-tomato"> Contact us now</a>
     </p>
     </p>
     </div>
@@ -218,7 +220,7 @@ class Home extends React.Component{
   <div className="row">
   <Zoom>
  <div className="col-md-4">
-    <NameTag img="/assets/images/product-9.jpg" category="Bed"/>
+    <NameTag img="/assets/images/product-9.jpg" category="Beds"/>
     </div>
     </Zoom>
     <Zoom>
@@ -228,7 +230,7 @@ class Home extends React.Component{
     </Zoom>
     <Zoom>
  <div className="col-md-4">
-    <NameTag img="/assets/images/product-8.jpg" category="Interior design"/>
+    <NameTag img="/assets/images/product-8.jpg" category="Interior designs"/>
     </div>
     </Zoom>
     </div>
@@ -249,23 +251,27 @@ class About extends React.Component{
       </Bounce>
       <Fade left>
       <p className="text-muted mt-4">
-      Adhelix is a company that is passionate about quality furnitures, roofings and interior decorations. We hate failing furnitures, leaking roofs or sitting room that sucks, that is why all our products and services are of excellent quality. Having several years of experience under our belt, we have been able to satisfy hundreds of clients across Nigeria.
+      Adhelix is a company that is passionate about quality furnitures, roofings and interior decorations. We hate failing furnitures, leaking roofs or sitting rooms that sucks. That is why all our products and services are of excellent quality. Having several years of experience under our belt, we have been able to satisfy hundreds of clients across Nigeria.
       </p>
       </Fade>
       <p className="text-muted">
       <Fade left>
       Our main goal is to help you transform your home into a comfort to behold. We believe in Integrity and consistency. 
+      </Fade>
+      </p>
+      <Fade left>
+      <p className="text-muted">
       When you need it beautifully designed and with quality materials then consider Adhelix.
+      </p>
       </Fade>
       <Bounce right>
       <p className="mt-3">
       <a href="tel:08023977807" className="text-light btn-tomato  px-2">Contact us</a>
       </p>
       </Bounce>
-      </p>
       <h1 className="text-center mt-5 mb-3">Here comes the hero.</h1>
       <Zoom>
-      <img src="/assets/images/leader.png" className="img rounded"/>
+      <img src="/assets/images/leader.png" className="img rounded" alt=""/>
       </Zoom>
       <p className="text-center mt-2">
       <b className="text-della x2 mt-2">Mr Ajibodu Matthew</b>
@@ -298,7 +304,7 @@ class NameTag extends React.Component{
     return (
       <React.Fragment>
       <div className="">
-      <img src={this.props.img} className="rounded img2"/>
+      <img src={this.props.img} className="rounded img2" alt="We make this"/>
       <div style={{
       maxWidth: "7rem",
       background: "rgba(255,255,255,1.0)",
@@ -306,12 +312,12 @@ class NameTag extends React.Component{
       left:"0.5rem",
       zIndex:"1"
       }} className="p-2 rounded text-center">
-      <span className="">{this.props.
-      category}</span>
+      <span className="">
+      {this.props.category}
+      </span>
       </div>
       </div>
       </React.Fragment>
-      
      );
   }
 }
@@ -325,7 +331,7 @@ class GalleryItem extends React.Component{
     return(
       <React.Fragment>
       <div className="">
-      <img src={this.props.mainImgUrl} className="img rounded"/>
+      <img src={this.props.mainImgUrl} className="img rounded" alt="Made by Adhelix"/>
       <div style={{
       maxWidth: "13rem",
       background: "rgba(255,255,255,0.85)",
@@ -336,7 +342,7 @@ class GalleryItem extends React.Component{
       <div className="row">
      <div className="col-5">
      
-     <img src={this.props.secondaryImgUrl} className="img rounded" style={{display: this.props.showDetails, width: this.props.imgWidth}}/>
+     <img src={this.props.secondaryImgUrl} className="img rounded" style={{display: this.props.showDetails, width: this.props.imgWidth}} alt="Made by Adhelix"/>
      </div>
      
      <div className="col-7">
