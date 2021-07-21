@@ -11,6 +11,20 @@ import Zoom from "react-reveal/Zoom";
 import Bounce from "react-reveal/Bounce";
 
 class App extends React.Component{
+  
+  constructor(props){
+    super (props);
+    this.state = {
+      loading: true
+    }
+  }
+ componentWillMount(){
+ const loading = this.state.loading;
+  
+  if(loading){
+    return(null);
+   }
+ }
   render(){
     return(
    <React.Fragment>

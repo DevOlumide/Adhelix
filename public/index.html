@@ -28,10 +28,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Adhelix - Your one stop place for all types of furnitures</title>
+    <style>
+  .preload-spinner{
+  position: absolute !important;
+  top: calc(50% - 4em) !important;
+  left: calc(50% - 2em) !important;
+  width: 6rem !important;
+  height: 6rem !important;
+  color: tomato !important;
+}
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="preload-spinner">
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
